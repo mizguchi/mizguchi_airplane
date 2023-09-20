@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안니옹하세요</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #airplane {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+        }
+        .red-circle-container {
+            position: absolute;
+            left: 10px;
+        }
+        .red-circle {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-color:darkmagenta;
+            animation: moveRedCircle 5s linear infinite;
+        }
+        @keyframes moveRedCircle {
+            from { top: -20px; }
+            to { top: 400vh; }
+        }
+        #timer {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            font-size: 24px;
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <img id="airplane" src="airplane.png" alt="Airplane">
+    <div class="red-circle-container"></div>
+    <div id="timer"> 0 초</div>
+    <script src="game.js"></script>
+</body>
+</html>
